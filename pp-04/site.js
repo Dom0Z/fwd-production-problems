@@ -6,9 +6,22 @@
 
 x = 5;
 
-function double(num) {
-  x = num * 2;
+/*function double(num) {
+  var x = num * 2;
   return x;
+}
+*/
+
+var obj = {
+  double: function(num){
+    if(isNaN(num)){
+      console.log("not a number entered");
+      return -1;
+
+    }
+    var x = num * 2;
+    return x;
+  }
 }
 
 double(6);
