@@ -24,7 +24,7 @@ var obj = {
   }
 }
 
-double(6);
+obj.double(6);
 console.log('The value of x is', x, '-- it should be 5.');
 
 /*
